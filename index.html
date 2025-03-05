@@ -1,34 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>
-        Shabu
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabu</title>
     <style>
+        /* Background and Layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Beautiful gradient background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff5f5;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin: 20px;
+            color: #fff;
+        }
+
+        /* Style for Radio Buttons */
+        input[type="radio"] {
+            display: none;
+        }
+
+        label {
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 15px 30px;
+            border-radius: 25px;
+            margin: 10px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        label:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style for Yes/No labels */
         .yes {
-            color: green; 
-            font-weight: bold;
+            background-color: #32CD32;
+            color: white;
         }
+
         .no {
-            color: red; 
-            font-weight: bold;
+            background-color: #DC143C;
+            color: white;
         }
+
+        /* Active/Checked Labels */
+        input[type="radio"]:checked + label {
+            background-color: #FFD700;
+            color: #2C3E50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add animation for change */
+        input[type="radio"]:checked + label {
+            animation: bounce 0.5s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
     </style>
 </head>
 <body>
-    <h1>
-        Are We Eating 
-    </h1>
-    <h3>
-        YSHABUBU
-    </h3>
-    <p>
-        please select an option below, thank you my fellow nose drippers!
-    </p>
+    <h1>Are We Eating?</h1>
+    <h3>YSHABUBU</h3>
+    <p>Please select an option below, thank you my fellow nose drippers!</p>
+
     <input type="radio" id="yes" name="eat">
-    <label for="yes" class="yes"> YESSSSS</label><br>
+    <label for="yes" class="yes">YESSSSS</label><br>
+
     <input type="radio" id="no" name="eat">
-    <label for="no" class="no"> NAURRR</label><br>
+    <label for="no" class="no">NAURRR</label><br>
 
     <script>
         document.getElementById("yes").addEventListener("change", function() {
@@ -36,6 +115,7 @@
                 window.location.href = "happy.avif";
             }
         });
+
         document.getElementById("no").addEventListener("change", function() {
             if (this.checked) {
                 window.location.href = "side-eye.jpeg";
