@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "A simple HTML, CSS, and JS project",
     "main": "index.html",
-    "homepage": "https://<username>.github.io/<repository-name>",
+    "homepage": "https://jamzheng109.github.io/Food-",
   
     "scripts": {
       "deploy": "gh-pages -d ."
