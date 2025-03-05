@@ -1,0 +1,19 @@
+{
+    "name": "my-html-project",
+    "version": "1.0.0",
+    "description": "A simple HTML, CSS, and JS project",
+    "main": "index.html",
+    "homepage": "https://<username>.github.io/<repository-name>",
+  
+    "scripts": {
+      "deploy": "gh-pages -d ."
+    },
+  
+    "author": "Your Name",
+    "license": "ISC",
+  
+    "devDependencies": {
+      "gh-pages": "^3.2.3"
+    }
+  }
+  
