@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Shabu
+    </title>
+    <style>
+        .yes {
+            color: green; 
+            font-weight: bold;
+        }
+        .no {
+            color: red; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Are We Eating 
+    </h1>
+    <h3>
+        YSHABUBU
+    </h3>
+    <p>
+        please select an option below, thank you my fellow nose drippers!
+    </p>
+    <input type="radio" id="yes" name="eat">
+    <label for="yes" class="yes"> YESSSSS</label><br>
+    <input type="radio" id="no" name="eat">
+    <label for="no" class="no"> NAURRR</label><br>
+
+    <script>
+        document.getElementById("yes").addEventListener("change", function() {
+            if (this.checked) {
+                window.location.href = "happy.avif";
+            }
+        });
+        document.getElementById("no").addEventListener("change", function() {
+            if (this.checked) {
+                window.location.href = "side-eye.jpeg";
+            }
+        });
+    </script>
+</body>
+</html>
