@@ -1,7 +1,32 @@
-echo "# Food-" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/jamzheng109/Food-.git
-git push -u origin main
+# Ignore system files (Mac & Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore editor config files (VS Code, Sublime, etc.)
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignore node_modules (if you use npm for dependencies)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore build/output folders
+dist/
+build/
+out/
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.tmp
+*.bak
+
+# Ignore environment/config files (if used)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
