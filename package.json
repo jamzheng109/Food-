@@ -9,7 +9,7 @@
       "deploy": "gh-pages -d ."
     },
   
-    "author": "Your Name",
+    "author": "jamzheng109",
     "license": "ISC",
   
     "devDependencies": {
